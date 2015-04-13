@@ -1,0 +1,141 @@
+URxvt.geometry:             80x25
+Xft.dpi:                    96
+Xft.hintstyle:              hintslight
+Xft.hinting:                true
+!Xft.rgba:                   rgb
+!Xcursor.theme:              Vanilla-DMZ
+
+!URxvt.font:					      xft:DejaVu Sans Mono:antialias=true:pixelsize=12
+!URxvt.boldFont:				    xft:DejaVu Sans Mono:bold:antialias=true:pixelsize=12
+!URxvt.italicFont:			    xft:DejaVu Sans Mono:italic:antialias=true:autohint=true:pixelsize=12
+!URxvt.boldItalicFont:		  xft:DejaVu Sans Mono:bold:italic:antialias=true:autohint=true:pixelsize=12
+
+URxvt.font:					      xft:Source Code Pro:antialias=true:pixelsize=13
+URxvt.boldFont:				    xft:Source Code Pro:bold:antialias=true:pixelsize=13
+URxvt.italicFont:			    xft:Source Code Pro:italic:antialias=true:autohint=true:pixelsize=13
+URxvt.boldItalicFont:		  xft:Source Code Pro:bold:italic:antialias=true:autohint=true:pixelsize=13
+
+!URxvt.font:					      xft:Ubuntu Mono:antialias=true:pixelsize=17
+!URxvt.boldFont:				    xft:Ubuntu Mono:bold:antialias=true:pixelsize=17
+!URxvt.italicFont:			    xft:Ubuntu Mono:italic:antialias=true:autohint=true:pixelsize=17
+!URxvt.boldItalicFont:		  xft:Ubuntu Mono:bold:italic:antialias=true:autohint=true:pixelsize=17
+
+!URxvt.font:					      xft:FreeMono:antialias=true:pixelsize=9
+!URxvt.boldFont:				    xft:FreeMono:bold:antialias=true:pixelsize=9
+!URxvt.italicFont:			    xft:FreeMono:italic:antialias=true:autohint=true:pixelsize=9
+!URxvt.boldItalicFont:		  xft:FreeMono:bold:italic:antialias=true:autohint=true:pixelsize=9
+
+!URxvt.font:					        xft:Monaco:antialias=true:pixelsize=10
+!URxvt.boldFont:				      xft:Monaco:bold:antialias=true:pixelsize=10
+!URxvt.italicFont:			      xft:Monaco:italic:antialias=true:autohint=true:pixelsize=10
+!URxvt.boldItalicFont:		    xft:Monaco:bold:italic:antialias=true:autohint=true:pixelsize=10
+
+!URxvt.font:					        xft:Mensch:antialias=true:pixelsize=9
+!URxvt.boldFont:				      xft:Mensch:bold:antialias=true:pixelsize=9
+!URxvt.italicFont:			      xft:Mensch:italic:antialias=true:autohint=true:pixelsize=9
+!URxvt.boldItalicFont:		    xft:Mensch:bold:italic:antialias=true:autohint=true:pixelsize=9
+!URxvt.font:					        xft:Envy Code R:antialias=true:pixelsize=8
+!URxvt.boldFont:				      xft:Envy Code R:bold:antialias=true:pixelsize=8
+!URxvt.italicFont:			      xft:Envy Code R:italic:antialias=true:autohint=true:pixelsize=8
+!URxvt.boldItalicFont:		    xft:Envy Code R:bold:italic:antialias=true:autohint=true:pixelsize=8
+
+!URxvt.font:					        xft:Inconsolata:antialias=true:pixelsize=9
+!URxvt.boldFont:				      xft:Inconsolata:bold:antialias=true:pixelsize=9
+!URxvt.italicFont:			      xft:Inconsolata:italic:antialias=true:autohint=true:pixelsize=9
+!URxvt.boldItalicFont:		    xft:Inconsolata:bold:italic:antialias=true:autohint=true:pixelsize=9
+
+
+urxvt.borderLess:           false
+urxvt.externalBorder:       0
+urxvt.internalBorder:       2
+urxvt.scrollBar:            false
+urxvt.depth:                32
+urxvt.background:           rgba:0000/0000/0000/dddd
+urxvt.foreground:           white
+urxvt.cursorColor:          #ffffff
+urxvt.cursorColor2:         #000000
+urxvt.cursorBlink:          false
+urxvt.inheritPixmap:        true 
+urxvt.shading:              75
+urxvt.termName:             rxvt
+urxvt.saveLines:            1000
+urxvt.scrollTtyOutput:      false
+urxvt.scrollTtyKeypress:    true
+urxvt.mouseWheelScrollPage: false
+urxvt.secondaryScroll:      true
+URxvt.urlLauncher:          /usr/bin/firefox
+URxvt.matcher.button:       1
+URxvt.matcher.pattern.1:    \bwww\.[\w-]\.[\w./?&@#-]*[\w/-]
+!URxvt.perl-ext-common:      default,matcher
+!URxvt.perl-ext-common:      default,matcher,font-size
+URxvt.xftAntialias:         true 
+urxvt.transparent:          true
+URxvt.keysym.C-Up:          perl:font-size:increase
+URxvt.keysym.C-Down:        perl:font-size:decrease
+URxvt.keysym.C-S-Up:        perl:font-size:incglobal
+URxvt.keysym.C-S-Down:      perl:font-size:decglobal
+
+
+! :Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.     
+!Theme Six
+!*background: rgb:be/be/be
+!*foreground: rgb:21/21/21
+!*color0:     rgb:00/00/00
+!*color1:     rgb:bf/72/76
+!*color2:     rgb:86/af/80
+!*color3:     rgb:96/8a/38
+!*color4:     rgb:36/73/b5
+!*color5:     rgb:9a/70/b2
+!*color6:     rgb:7a/be/cc
+!*color7:     rgb:db/db/db
+!*color8:     rgb:66/92/af
+!*color9:     rgb:e5/50/5f
+!*color10:    rgb:87/bc/87
+!*color11:    rgb:e0/d9/5c
+!*color12:    rgb:1b/85/d6
+!*color13:    rgb:ad/73/ba
+!*color14:    rgb:33/8e/aa
+!*color15:    rgb:f4/f4/f4
+!Theme Eleven
+!*background: rgb:33/33/33
+!*foreground: rgb:ff/ff/ff
+!*color0:     rgb:33/33/33
+!*color8:     rgb:33/33/33
+!*color1:     rgb:ff/a0/a0
+!*color9:     rgb:ff/a0/a0
+!*color2:     rgb:98/fb/98
+!*color10:    rgb:9a/cd/32
+!*color3:     rgb:f0/e6/8c
+!*color11:    rgb:f0/e6/8c
+!*color4:     rgb:87/ce/eb
+!*color12:    rgb:87/ce/eb
+!*color5:     rgb:ff/a0/a0
+!*color13:    rgb:ff/a0/a0
+!*color6:     rgb:87/ce/eb
+!*color14:    rgb:87/ce/eb
+!*color7:     rgb:ff/ff/ff
+!*color15:    rgb:ff/ff/ff
+! Black
+*color0:  #2E3436
+*color8:  #555753
+! Red
+*color1:  #CC0000
+*color9:  #EF2929
+! Green
+*color2:  #7CE813
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC
