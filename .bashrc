@@ -15,9 +15,6 @@ esac
 alias ssh-add='ssh-add -t 8h'
 alias vactivate='source venv/bin/activate'
 
-# Scripts
-source ~/.scripts/pastebin.sh
-
 export EDITOR=vim
 #########################################################################
 #########################################################################
