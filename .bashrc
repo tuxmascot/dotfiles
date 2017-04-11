@@ -13,9 +13,10 @@ esac
 
 # Aliases
 alias ssh-add='ssh-add -t 8h'
-alias vactivate='source venv/bin/activate'
 
 export EDITOR=vim
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
 #########################################################################
 #########################################################################
 
