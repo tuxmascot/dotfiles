@@ -10,10 +10,10 @@ Xft.hinting:                true
 !URxvt.italicFont:			    xft:DejaVu Sans Mono:italic:antialias=true:autohint=true:pixelsize=12
 !URxvt.boldItalicFont:		  xft:DejaVu Sans Mono:bold:italic:antialias=true:autohint=true:pixelsize=12
 
-URxvt.font:					      xft:Source Code Pro:antialias=true:pixelsize=13
-URxvt.boldFont:				    xft:Source Code Pro:bold:antialias=true:pixelsize=13
-URxvt.italicFont:			    xft:Source Code Pro:italic:antialias=true:autohint=true:pixelsize=13
-URxvt.boldItalicFont:		  xft:Source Code Pro:bold:italic:antialias=true:autohint=true:pixelsize=13
+URxvt.font:					      xft:ttf-hack:antialias=true:pixelsize=12
+URxvt.boldFont:				    xft:ttf-hack:bold:antialias=true:pixelsize=12
+URxvt.italicFont:			    xft:ttf-hack:italic:antialias=true:autohint=true:pixelsize=12
+URxvt.boldItalicFont:		  xft:ttf-hack:bold:italic:antialias=true:autohint=true:pixelsize=12
 
 !URxvt.font:					      xft:Ubuntu Mono:antialias=true:pixelsize=17
 !URxvt.boldFont:				    xft:Ubuntu Mono:bold:antialias=true:pixelsize=17
@@ -34,10 +34,10 @@ URxvt.boldItalicFont:		  xft:Source Code Pro:bold:italic:antialias=true:autohint
 !URxvt.boldFont:				      xft:Mensch:bold:antialias=true:pixelsize=9
 !URxvt.italicFont:			      xft:Mensch:italic:antialias=true:autohint=true:pixelsize=9
 !URxvt.boldItalicFont:		    xft:Mensch:bold:italic:antialias=true:autohint=true:pixelsize=9
-!URxvt.font:					        xft:Envy Code R:antialias=true:pixelsize=8
-!URxvt.boldFont:				      xft:Envy Code R:bold:antialias=true:pixelsize=8
-!URxvt.italicFont:			      xft:Envy Code R:italic:antialias=true:autohint=true:pixelsize=8
-!URxvt.boldItalicFont:		    xft:Envy Code R:bold:italic:antialias=true:autohint=true:pixelsize=8
+!URxvt.font:					        xft:Envy Code R:antialias=true:pixelsize=12
+!URxvt.boldFont:				      xft:Envy Code R:bold:antialias=true:pixelsize=12
+!URxvt.italicFont:			      xft:Envy Code R:italic:antialias=true:autohint=true:pixelsize=12
+!URxvt.boldItalicFont:		    xft:Envy Code R:bold:italic:antialias=true:autohint=true:pixelsize=12
 
 !URxvt.font:					        xft:Inconsolata:antialias=true:pixelsize=9
 !URxvt.boldFont:				      xft:Inconsolata:bold:antialias=true:pixelsize=9
@@ -47,14 +47,14 @@ URxvt.boldItalicFont:		  xft:Source Code Pro:bold:italic:antialias=true:autohint
 
 urxvt.borderLess:           false
 urxvt.externalBorder:       0
-urxvt.internalBorder:       2
+urxvt.internalBorder:       0
 urxvt.scrollBar:            false
 urxvt.depth:                32
-urxvt.background:           rgba:0000/0000/0000/dddd
-urxvt.foreground:           white
-urxvt.cursorColor:          #ffffff
+urxvt.background:           #002b36
+urxvt.foreground:           #839496
+urxvt.cursorColor:          #ff0000
 urxvt.cursorColor2:         #000000
-urxvt.cursorBlink:          false
+urxvt.cursorBlink:          true
 urxvt.inheritPixmap:        true 
 urxvt.shading:              75
 urxvt.termName:             rxvt
@@ -74,7 +74,6 @@ URxvt.keysym.C-Up:          perl:font-size:increase
 URxvt.keysym.C-Down:        perl:font-size:decrease
 URxvt.keysym.C-S-Up:        perl:font-size:incglobal
 URxvt.keysym.C-S-Down:      perl:font-size:decglobal
-
 
 ! :Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.     
 !Theme Six
