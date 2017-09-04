@@ -10,7 +10,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'saltstack/salt-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -60,8 +59,7 @@ let g:jedi#popup_on_dot = 0
 
 " vim-gitgutter settings
 highlight clear SignColumn
-let g:gitgutter_sign_column_always = 1
-
+set signcolumn=yes
 " You complete me settings
 let g:ycm_autoclose_preview_window_after_completion = 1
 
@@ -79,7 +77,7 @@ nnoremap <leader>d gqG<CR>
 
 " Ignore errors for 80 character limit. Sometimes is unavoidable (imo) and
 " covers up other run time errors
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_pylint_post_args='-d C0103'
 "let g:syntastic_python_pylint_post_args='-d C0103'
 
