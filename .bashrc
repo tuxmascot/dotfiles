@@ -14,13 +14,13 @@ esac
 # Aliases
 alias ssh-add='ssh-add -t 8h'
 
+# Display Aliases
+alias disp-reset='xrandr -s 0'
+alias disp-home='xrandr --output DP-1 --mode 3840x2160 --above eDP-1'
+
 # Environment Variables
 export EDITOR=vim
 export XDG_CONFIG_HOME=~/.config
-
-# Python Virtualenv
-export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
 
 #########################################################################
 #########################################################################

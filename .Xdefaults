@@ -2,48 +2,11 @@ URxvt.geometry:             80x25
 Xft.dpi:                    96
 Xft.hintstyle:              hintslight
 Xft.hinting:                true
-!Xft.rgba:                   rgb
-!Xcursor.theme:              Vanilla-DMZ
 
-!URxvt.font:					      xft:DejaVu Sans Mono:antialias=true:pixelsize=12
-!URxvt.boldFont:				    xft:DejaVu Sans Mono:bold:antialias=true:pixelsize=12
-!URxvt.italicFont:			    xft:DejaVu Sans Mono:italic:antialias=true:autohint=true:pixelsize=12
-!URxvt.boldItalicFont:		  xft:DejaVu Sans Mono:bold:italic:antialias=true:autohint=true:pixelsize=12
-
-URxvt.font:					      xft:ttf-hack:antialias=true:pixelsize=12
-URxvt.boldFont:				    xft:ttf-hack:bold:antialias=true:pixelsize=12
-URxvt.italicFont:			    xft:ttf-hack:italic:antialias=true:autohint=true:pixelsize=12
-URxvt.boldItalicFont:		  xft:ttf-hack:bold:italic:antialias=true:autohint=true:pixelsize=12
-
-!URxvt.font:					      xft:Ubuntu Mono:antialias=true:pixelsize=17
-!URxvt.boldFont:				    xft:Ubuntu Mono:bold:antialias=true:pixelsize=17
-!URxvt.italicFont:			    xft:Ubuntu Mono:italic:antialias=true:autohint=true:pixelsize=17
-!URxvt.boldItalicFont:		  xft:Ubuntu Mono:bold:italic:antialias=true:autohint=true:pixelsize=17
-
-!URxvt.font:					      xft:FreeMono:antialias=true:pixelsize=9
-!URxvt.boldFont:				    xft:FreeMono:bold:antialias=true:pixelsize=9
-!URxvt.italicFont:			    xft:FreeMono:italic:antialias=true:autohint=true:pixelsize=9
-!URxvt.boldItalicFont:		  xft:FreeMono:bold:italic:antialias=true:autohint=true:pixelsize=9
-
-!URxvt.font:					        xft:Monaco:antialias=true:pixelsize=10
-!URxvt.boldFont:				      xft:Monaco:bold:antialias=true:pixelsize=10
-!URxvt.italicFont:			      xft:Monaco:italic:antialias=true:autohint=true:pixelsize=10
-!URxvt.boldItalicFont:		    xft:Monaco:bold:italic:antialias=true:autohint=true:pixelsize=10
-
-!URxvt.font:					        xft:Mensch:antialias=true:pixelsize=9
-!URxvt.boldFont:				      xft:Mensch:bold:antialias=true:pixelsize=9
-!URxvt.italicFont:			      xft:Mensch:italic:antialias=true:autohint=true:pixelsize=9
-!URxvt.boldItalicFont:		    xft:Mensch:bold:italic:antialias=true:autohint=true:pixelsize=9
-!URxvt.font:					        xft:Envy Code R:antialias=true:pixelsize=12
-!URxvt.boldFont:				      xft:Envy Code R:bold:antialias=true:pixelsize=12
-!URxvt.italicFont:			      xft:Envy Code R:italic:antialias=true:autohint=true:pixelsize=12
-!URxvt.boldItalicFont:		    xft:Envy Code R:bold:italic:antialias=true:autohint=true:pixelsize=12
-
-!URxvt.font:					        xft:Inconsolata:antialias=true:pixelsize=9
-!URxvt.boldFont:				      xft:Inconsolata:bold:antialias=true:pixelsize=9
-!URxvt.italicFont:			      xft:Inconsolata:italic:antialias=true:autohint=true:pixelsize=9
-!URxvt.boldItalicFont:		    xft:Inconsolata:bold:italic:antialias=true:autohint=true:pixelsize=9
-
+URxvt.font:					xft:hack-regular:antialias=true:pixelsiz=15
+URxvt.boldFont:				xft:hack-bold:bold:antialias=true:pixelsize=15
+URxvt.italicFont:			xft:hack-italic:italic:antialias=true:autohint=true:pixelsize=15
+URxvt.boldItalicFont:		xft:hack-bolditalic:bold:italic:antialias=true:autohint=true:pixelsize=15
 
 urxvt.borderLess:           false
 urxvt.externalBorder:       0

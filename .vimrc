@@ -1,83 +1,99 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Start up options
+set nocompatible    " Always use improved mode
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Set vim-plug plugin directory
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/vundle'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+" Vim UI plugins
+"Plug 'vim-airline/vim-airline' " Vim statusbar derivative of powerline
+Plug 'airblade/vim-gitgutter'   " Show which lines change wrt the git repo
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Development UX plugins
+"Plug 'SirVer/ultisnips'    " Snippet completion engine
+Plug 'scrooloose/nerdtree'  " File system explorer inside vim
+Plug 'mbbill/undotree'      " Vim undo history explorer
+Plug 'scrooloose/syntastic' " Perform syntax checking via external syntax checkers like flake8
+Plug 'majutsushi/tagbar'    " Tag browser
 
-" Syntax
-syntax enable
+" LaTeX plugins
+Plug 'lervag/vimtex', {'for': 'latex'}  " Vim support for writing LaTeX docs
 
-" Text, tab, and indent related stuffs
-set expandtab
-set smarttab
+" Search plugins
+Plug 'easymotion/vim-easymotion'    " Fuzzy-search based navigation
 
-" Set tabs to spaces
-set shiftwidth=4
-set tabstop=4
+" Python specific dev UX plugins
+Plug 'davidhalter/jedi-vim', {'for': 'python'}          " Python autocompletion via Jedi
+Plug 'alfredodeza/pytest.vim', {'for': 'python'}        " Run Py.test within vim
+Plug 'alfredodeza/coveragepy.vim', {'for': 'python'}    " Get test coverage reports via coverage.py
 
-set ai
-set si
-set wrap
-set nu
+" Initialize plugins
+call plug#end()
 
-" Dark solarized Theme
+" Tab, text, and indentation settings
+set shiftwidth=4    " Size of a vim indentation is 4
+set tabstop=4       " Size of a tab indent is 4
+set expandtab       " Insert spaces instead of tab characters
+set smarttab        " Detect tabs as 4 spaces and handle as a tab
+set autoindent      " Enable auto indentation on new lines
+set smartindent     " Detect syntax indentation
+set wrap            " Wrap lines onto the next line
+set number          " Enable absolute line numbers
+set encoding=utf-8  " Set text encoding to UTF-8
+
+" UI/UX settings
+syntax enable       " Enable synatx highlighting
+set colorcolumn=79  " Enable text limit column for PEP8 compliance
+set textwidth=0     " Disable text insert width limits
+
+" Solarized colorscheme settings
 set t_Co=256
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1   
-let g:solarized_contrast="high"
-set background=dark
-colorscheme solarized
+let g:solarized_termcolors=256  " Use 256-bit colors
+let g:solarized_termtrans=1     " Enable terminal transparency (needed for urxvt)
+let g:solarized_contrast="high" " Use high contrast in colors for the scheme
+set background=dark     " Use dark background variant of colorscheme
+colorscheme solarized   " Use the solarized color scheme (altercation/vim-colors-solarized)
 
-" Highlight trailing whitespace extra
-highlight ExtraWhitespace ctermbg=red guibg=red
-au ColorScheme * highlight ExtraWhitespace guibg=red
-au BufEnter * match ExtraWhitespace /s+$/
-au InsertEnter * match ExtraWhitespace /s+%#@<!$/
-au InsertLeave * match ExtraWhiteSpace /s+$/
 
-" Turn on column 80 highlighting and textwidth 0 for all buffers by default
-set colorcolumn=80
-set textwidth=0
+"""""""""""""""""""""
+"  PLUGIN SETTINGS  "
+"""""""""""""""""""""
 
-"""""""""""""
-"  MODULES  "
-"""""""""""""
-
-" Jedi vim module settings
-let g:jedi#show_function_definition = "0"
-let g:jedi#popup_on_dot = 0
-
-" vim-gitgutter settings
+" vim-gitgutter
 highlight clear SignColumn
 set signcolumn=yes
-" You complete me settings
-let g:ycm_autoclose_preview_window_after_completion = 1
 
-" YouCompleteMe shortcuts - TODO - toggle errors
-nnoremap <leader>o :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" NERDTree
+map <F1> :NERDTreeToggle<CR>
 
-" Syntastic shortcuts
-nnoremap <leader>e :Errors<CR>
-nnoremap <leader>j :lnext<CR>
-nnoremap <leader>k :lprev<CR>
-nnoremap <leader>r :lcl<CR>
+" undotree
+nnoremap <F2> :UndotreeToggle<CR>
 
-" Text formatting
-nnoremap <leader>d gqG<CR>
-
-" Ignore errors for 80 character limit. Sometimes is unavoidable (imo) and
-" covers up other run time errors
+" syntastic
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_pylint_post_args='-d C0103'
-"let g:syntastic_python_pylint_post_args='-d C0103'
 
+" tagbar
+nmap <F3> :TagbarToggle<CR>
+
+" vimtex
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:tex_conceal='abdmg'
+let g:Tex_IgnoredWarnings = 'Overfull'."\n"
+let g:Tex_IgnoreLevel= 8
+
+" vim-easymotion
+map <Leader> <Plug>(easymotion-prefix)
+
+" Jedi-vim
+let g:jedi#show_call_signatures = "0"
+let g:jedi#popup_on_dot = "0"
+
+" pytest.vim
+map <F5> :Pytest file -s<CR>
+map <F5>f :Pytest function -s<CR>
+map <F5>c :Pytest class -s<CR>
+map <F5>m :Pytest method -s<CR>
+
+" coveragepy.vim
+map <F6> :Coveragepy show<CR>
+map <F6>s :Coveragepy session<CR><C-ww>
