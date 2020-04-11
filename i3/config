@@ -41,10 +41,10 @@ bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec rofi -show run -config $HOME/.config/i3/rofi.conf 
+bindsym $mod+d exec rofi -show run -config $HOME/.config/rofi/config.conf -theme berry
 
 # start rofi ssh
-bindsym $mod+c exec rofi -show ssh -config $HOME/.config/i3/rofi.conf
+bindsym $mod+c exec rofi -show ssh -config $HOME/.config/rofi/config.conf -theme berry
 
 # change focus
 bindsym $mod+j focus left
