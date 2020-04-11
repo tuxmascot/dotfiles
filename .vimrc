@@ -47,11 +47,11 @@ set textwidth=0     " Disable text insert width limits
 
 " Solarized colorscheme settings
 set t_Co=256
-let g:solarized_termcolors=256  " Use 256-bit colors
-let g:solarized_termtrans=1     " Enable terminal transparency (needed for urxvt)
 let g:solarized_contrast="high" " Use high contrast in colors for the scheme
 set background=dark     " Use dark background variant of colorscheme
 colorscheme solarized   " Use the solarized color scheme (altercation/vim-colors-solarized)
+"let g:solarized_termcolors=256  " Use 256-bit colors
+"let g:solarized_termtrans=1     " Enable terminal transparency (needed for urxvt)
 
 
 """""""""""""""""""""
