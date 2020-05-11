@@ -4,7 +4,7 @@
 
 # Aliases
 alias ls='exa --color=always'
-alias disp-reset='xrandr -s 0'
+alias disp-reset='xrandr --output DP1 --off'
 alias disp-home='xrandr --output DP1 --mode 3840x2160 --above eDP1'
 
 # Color aliases
